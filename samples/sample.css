@@ -1,0 +1,39 @@
+#slideOverlay {
+    height: 400px;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 460px;
+}
+#slideHook {
+    background-color: red;
+    text-align:center;
+    color: white;
+    float: left;
+    height: 70px;
+    width: 60px;
+    margin-top: 40px;
+    border-bottom-left-radius:10px;
+    border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+}
+#slideHook p{
+	-moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    font-weight: bold;
+}
+#slideContent {
+    background-color: gray;
+    float: left;
+    height: 400px;
+    width: 400px;
+    
+    border-bottom-left-radius:10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
