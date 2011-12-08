@@ -4,8 +4,31 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>jquery.slider</title>
+        <link href="sample.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>	
+        <script src="../src/jquery.slider.js" type="text/javascript"></script> 
+        <script>
+        	$(function(){
+	        	var slideHook = $("#slideHook");
+	        	var slideOverlay = $("#slideOverlay");
+	        	
+	        	slideHook.bind('click touch', function(){
+	        		if(slideOverlay.css('right') == '0px'){
+	        			slideOverlay.animate({ right : "-400px"});
+	        		}
+	        		else{
+	        			slideOverlay.animate({ right : "0px"});
+	        		}
+	        	});
+        	});
+        </script>       
     </head>
     <body>
         <h1>Examples</h1>
+        <div id="slideOverlay">
+        	<div id="slideHook"><p>Click Me</p></div>
+        	<div id="slideContent"></div>
+        </div>
     </body>
 </html>
